@@ -1,5 +1,7 @@
+import type { ReactNode } from "react";
+
 type SectionTitleProps = {
-  title: string;
+  title: ReactNode;
 };
 
 export default function SectionTitle({ title }: SectionTitleProps) {
