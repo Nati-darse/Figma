@@ -67,7 +67,7 @@ export default function AISection() {
   const [activeTab, setActiveTab] = useState<"review" | "customer">("review");
 
   return (
-    <section className="py-20 px-6 bg-[#01051e] text-white">
+    <section className="py-2 pb-0 px-6 bg-[#01051e] text-white">
       <div className="max-w-6xl mx-auto pb-10">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold flex items-center justify-center gap-2">
@@ -95,41 +95,40 @@ export default function AISection() {
               <div className="absolute top-0 left-1/3 -translate-x-1/3 w-0 h-0 
             border-l-[150px] border-r-[70px] border-b-[250px] border-transparent
             border-b-[#320a6e] blur-2xl opacity-90 rotate-110" />
-
-              <div className="flex flex-col gap-4 ">
-                <div className="flex items-start justify-between gap-4">
-                  <div >
-                    <h3 className="flex items-center gap-2 text-white text-lg font-semibold">
-                      <FaMagic className="text-white pr-1" />
-                      Generate Listings From Scratch
-                    </h3>
-                    <p className="text-gray-400 mt-2 text-sm pl-2">
-                      Enter your ASIN or current listing and our AI listing tool will help you create high-converting listings for your products.
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-2">
-                  <div className="flex items-center gap-3">
-                    <div className="relative flex-1">
-                      <input
-                        className="w-full bg-gray-800/30 border border-gray-900/25 rounded-lg px-4 py-3 text-gray-200 placeholder:text-gray-500"
-                        placeholder="Enter ASIN, eg. B07DTTFW5R"
-                      />
-                      <FaSearch className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500" />
+                  <div className="flex flex-col gap-4 ">
+                    <div className="flex items-start justify-between gap-4">
+                      <div >
+                        <h3 className="flex items-center gap-2 text-white text-lg font-semibold">
+                          <FaMagic className="text-white pr-1" />
+                          Generate Listings From Scratch
+                        </h3>
+                        <p className="text-gray-400 mt-2 text-sm pl-2">
+                          Enter your ASIN or current listing and our AI listing tool will help you create high-converting listings for your products.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {["Title", "Description", "Features", "Keywords"].map((t) => (
-                      <span
-                        key={t}
-                        className="text-xs px-3 py-1 rounded-full bg-gradient-to-r from-[#220b39]/50 to-[#2b0d4b]/30 border border-purple-900/20 text-purple-300"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div className="mt-4 bg-gray-800/30 border border-purple-900/20 rounded-lg p-4">
+                    <div className="my-6 pl-12">
+                      <div className="flex items-center gap-3">
+                        <div className="relative flex-1">
+                          <input
+                            className="w-full bg-gray-800/30 border border-gray-900/25 rounded-lg px-4 py-3 text-gray-200 placeholder:text-gray-500"
+                            placeholder="Enter ASIN, eg. B07DTTFW5R"
+                          />
+                          <FaSearch className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500" />
+                        </div>
+                      </div>
+                      <div className="mt-6 flex flex-wrap gap-2">
+                        {["Title", "Description", "Features", "Keywords"].map((t) => (
+                          <span
+                            key={t}
+                            className="text-xs px-3 py-1 rounded-full bg-gradient-to-r from-[#220b39]/50 to-[#2b0d4b]/30 border border-purple-900/20 text-purple-300"
+                          >
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  <div className="mt-4 bg-gray-800/30 border border-purple-900/20 rounded-lg p-4">
                   <div className="flex gap-4">
                     <div className="w-20 h-20 bg-gray-700/30 rounded-lg border border-purple-900/15 flex items-center justify-center text-gray-600">
                       IMG
@@ -139,8 +138,8 @@ export default function AISection() {
                       <div className="text-xs text-gray-400 mt-2">
                         - Highly protective design and ergonomic fit. - Excellent drop resistance and grip.
                       </div>
-                      <div className="mt-3 text-xs text-gray-500">Listing Performance</div>
-                      <div className="mt-2 grid grid-cols-3 gap-3 pl-2 ">
+                      <div className="my-3 text-xs text-gray-500">Listing Performance</div>
+                      <div className="my-4 grid grid-cols-3 gap-3 py-2">
                         <MetricBox value="238" label="Keywords" />
                         <MetricBox value="53,200" label="Search volume" />
                         <MetricBox value="98/100" label="Listing score" />
@@ -154,13 +153,12 @@ export default function AISection() {
 
           {/* RIGHT: Review Analysis card with stacked depth effect */}
           <div className="relative">
-            <div className="absolute -bottom-4 -right-4 w-full h-full rounded-2xl bg-gradient-to-br from-purple-900/30 to-purple-950/10 blur-sm z-0"></div>
-            <Card className="relative bg-gradient-to-br from-[#13062a] to-[#0c0515] border border-purple-900/30 shadow-2xl shadow-blue-900/10 z-10 overflow-visible">
+          <Card className="relative bg-gradient-to-br from-[#13062a] to-[#270f7d] border border-purple-900/30 shadow-2xl shadow-blue-900/10 z-10 overflow-visible">
               <div className="flex flex-col gap-4">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 className="flex items-center gap-2 text-white text-lg font-semibold">
-                      <FaMagic className="text-purple-400" />
+                      <FaMagic className="text-white" />
                       Review Analysis
                     </h3>
                     <p className="text-gray-400 mt-2 text-sm">
@@ -193,7 +191,7 @@ export default function AISection() {
                     text="Solid product overall, minor issues with the strap but customer service was helpful."
                   />
                 </div>
-                <div className="mt-3">
+                <div className="mt-0">
                   <div className="flex gap-2 items-center">
                     <button
                       onClick={() => setActiveTab("review")}
@@ -212,7 +210,7 @@ export default function AISection() {
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <div className="text-sm text-gray-300 font-medium">Purchase Intention</div>
-                        <div className="mt-3 space-y-3">
+                        <div className="mt-1 space-y-3">
                           <div className="text-xs text-gray-400">Good Quality</div>
                           <ProgressBar value={72} />
                           <div className="text-xs text-gray-400 mt-2">Value for Money</div>
@@ -223,7 +221,7 @@ export default function AISection() {
                       </div>
                       <div>
                         <div className="text-sm text-gray-300 font-medium">Review Feedback</div>
-                        <div className="mt-3 h-36 bg-gradient-to-b from-[#0e0b17] to-[#07101b] rounded-lg border border-purple-900/15 flex items-end gap-2 px-3 py-3">
+                        <div className="mt-3 h-32 bg-gradient-to-b from-[#0e0b17] to-[#07101b] rounded-lg border border-purple-900/15 flex items-end gap-2 px-3 py-3">
                           {Array.from({ length: 12 }).map((_, i) => (
                             <div key={i} className="flex-1 flex items-end">
                               <div
