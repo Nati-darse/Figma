@@ -1,7 +1,6 @@
-# Designed by @BreejeAnadkat on X (formerly twiter)
- 
+# Designed by @BreejeAnadkat on X (formerly twiter) and develop by me using React + TypeScript + Vite
 
-# React + TypeScript + Vite
+![fig](https://github.com/user-attachments/assets/4dc7b44e-6978-4a44-8da5-aca389f3a7f4)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
