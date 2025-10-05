@@ -67,7 +67,7 @@ export default function AISection() {
   const [activeTab, setActiveTab] = useState<"review" | "customer">("review");
 
   return (
-    <section className="py-2 pb-0 px-6 bg-[#01051e] text-white">
+    <section className=" px-6 bg-[#01051e] text-white">
       <div className="max-w-6xl mx-auto pb-10">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold flex items-center justify-center gap-2">
