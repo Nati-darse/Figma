@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaAmazon, FaEbay, FaFacebook, FaShopify } from "react-icons/fa";
 import { SiWalmart } from "react-icons/si";
 

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { FaAmazon } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { SiOpenai } from "react-icons/si";
