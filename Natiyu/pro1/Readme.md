@@ -1,0 +1,1 @@
+### here is the landingpage development from the design with typescript and react 
