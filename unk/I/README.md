@@ -54,6 +54,56 @@ ng e2e
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
+## the file structure looks like 
+src/
+└─ app/
+   ├─ navbar/
+   │  ├─ navbar.html
+   │  ├─ navbar.scss
+   │  ├─ navbar.ts
+   │  └─ navbar.spec.ts
+   ├─ hero/
+   │  ├─ hero.html
+   │  ├─ hero.scss
+   │  ├─ hero.ts
+   │  └─ hero.spec.ts
+   ├─ social-bar/
+   │  ├─ social-bar.html
+   │  ├─ social-bar.scss
+   │  ├─ social-bar.ts
+   │  └─ social-bar.spec.ts
+   ├─ offer/
+   │  ├─ offer.html
+   │  ├─ offer.scss
+   │  ├─ offer.ts
+   │  └─ offer.spec.ts
+   ├─ services/
+   │  ├─ services.html
+   │  ├─ services.scss
+   │  ├─ services.ts
+   │  └─ services.spec.ts
+   ├─ gallery/
+   │  ├─ gallery.html
+   │  ├─ gallery.scss
+   │  ├─ gallery.ts
+   │  └─ gallery.spec.ts
+   ├─ story/
+   │  ├─ story.html
+   │  ├─ story.scss
+   │  ├─ story.ts
+   │  └─ story.spec.ts
+   ├─ faq/
+   │  ├─ faq.html
+   │  ├─ faq.scss
+   │  ├─ faq.ts
+   │  └─ faq.spec.ts
+   └─ footer/
+      ├─ footer.html
+      ├─ footer.scss
+      ├─ footer.ts
+      └─ footer.spec.ts
+
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
