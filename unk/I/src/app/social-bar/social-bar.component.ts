@@ -5,8 +5,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-social-bar',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './social-bar.html',
-  styleUrls: ['./social-bar.css']
+  templateUrl: './social-bar.component.html',
+  styleUrls: ['./social-bar.component.css']
 })
 export class SocialBarComponent {
   socials = ['Google', 'Facebook', 'Instagram', 'Threads'];

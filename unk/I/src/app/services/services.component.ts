@@ -8,10 +8,10 @@ interface ServiceItem {
 
 @Component({
   selector: 'app-services',
-  templateUrl: './services.html',
-  styleUrls: ['./services.css'],
-  standalone: true,
-  imports: [CommonModule]
+    standalone: true,
+  imports: [CommonModule],
+  templateUrl: './services.component.html',
+  styleUrls: ['./services.component.css']
 })
 export class ServicesComponent {
   items: ServiceItem[] = [

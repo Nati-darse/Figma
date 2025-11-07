@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-gallery',
-  templateUrl: './gallery.html',
-  styleUrls: ['./gallery.css'],
-  standalone: true,
-  imports: [CommonModule]
+    standalone: true,
+  imports: [CommonModule],
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent {
   images = new Array(8).fill(0).map((_, i) => ({

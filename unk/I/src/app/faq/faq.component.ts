@@ -9,10 +9,10 @@ interface QA {
 
 @Component({
   selector: 'app-faq',
-  templateUrl: './faq.html',
-  styleUrls: ['./faq.css'],
-  standalone: true,
-  imports: [CommonModule]
+    standalone: true,
+  imports: [CommonModule],
+  templateUrl: './faq.component.html',
+  styleUrls: ['./faq.component.css']
 })
 export class FaqComponent {
   faqs: QA[] = [

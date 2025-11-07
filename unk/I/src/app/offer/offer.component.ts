@@ -8,10 +8,10 @@ interface Offer {
 
 @Component({
   selector: 'app-offer',
-  standalone: true,
+    standalone: true,
   imports: [CommonModule],
-  templateUrl: './offer.html',
-  styleUrls: ['./offer.css']
+  templateUrl: './offer.component.html',
+  styleUrls: ['./offer.component.css']
 })
 export class OfferComponent {
   offers: Offer[] = [

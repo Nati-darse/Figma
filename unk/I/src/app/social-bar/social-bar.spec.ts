@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { SocialBarComponent } from './social-bar';
+import { SocialBarComponent } from './social-bar.component';
 
 describe('SocialBarComponent', () => {
   let component: SocialBarComponent;
