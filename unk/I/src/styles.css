@@ -1,5 +1,28 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles for your interior design theme */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-white text-gray-900 px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply border border-white/40 text-white px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300;
+  }
+  
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
