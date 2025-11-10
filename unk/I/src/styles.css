@@ -1,9 +1,9 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Custom styles for your interior design theme */
-@layer base {
+/* @layer base {
   html {
     scroll-behavior: smooth;
   }
@@ -25,4 +25,14 @@
   .glass-effect {
     @apply bg-white/10 backdrop-blur-md border border-white/20;
   }
+}  */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
 }
