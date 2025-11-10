@@ -1,14 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HeroComponent } from './hero/hero.component';
-import { SocialBarComponent } from './social-bar/social-bar.component';
-import { OfferComponent } from './offer/offer.component';
-import { ServicesComponent } from './services/services.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { StoryComponent } from './story/story.component';
-import { FaqComponent } from './faq/faq.component';
-import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './Components/navbar/navbar.component';
+import { HeroComponent } from './Components/hero/hero.component';
+import { SocialBarComponent } from './Components/social-bar/social-bar.component';
+import { OfferComponent } from './Components/offer/offer.component';
+import { ServicesComponent } from './Components/services/services.component';
+import { GalleryComponent } from './Components/gallery/gallery.component';
+import { StoryComponent } from './Components/story/story.component';
+import { FaqComponent } from './Components/faq/faq.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
