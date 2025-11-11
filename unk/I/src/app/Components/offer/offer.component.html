@@ -1,11 +1,54 @@
-<section class="py-12 bg-white">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-2xl font-semibold mb-6">What We Offer?</h2>
-    <div class="grid gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-      <div *ngFor="let o of offers" class="relative rounded-xl overflow-hidden shadow-md">
-        <div class="h-40 bg-cover bg-center" [ngStyle]="{'background-image': 'url(' + o.image + ')'}"></div>
-        <div class="absolute left-4 bottom-4 bg-black/60 text-white px-3 py-1 rounded">{{ o.title }}</div>
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-6">What We Offer</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Discover our comprehensive interior design services crafted to transform your space into a reflection of your personality
+      </p>
+    </div>
+
+    <!-- Offers Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div *ngFor="let o of offers" 
+           class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer">
+        
+        <!-- Image Container -->
+        <div class="aspect-[4/5] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+             [ngStyle]="{'background-image': 'url(' + o.image + ')'}">
+          
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90 group-hover:opacity-80 transition-opacity duration-300"></div>
+          
+          <!-- Content -->
+          <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+            <h3 class="text-2xl font-serif font-light mb-3 transform group-hover:translate-y-[-5px] transition-transform duration-300">
+              {{ o.title }}
+            </h3>
+            <p class="text-white/90 text-lg leading-relaxed opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 transition-all duration-500">
+              {{ o.description }}
+            </p>
+            
+            <!-- CTA Arrow -->
+            <div class="mt-4 opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2 transition-all duration-500 delay-100">
+              <div class="inline-flex items-center space-x-2 text-white/90 hover:text-white transition-colors duration-300">
+                <span class="text-sm font-medium">Learn more</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="text-center mt-16">
+      <button class="bg-gray-900 text-white px-10 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+        View Complete Portfolio
+      </button>
+      <p class="text-gray-500 mt-4 text-sm">Get inspired by our previous projects</p>
     </div>
   </div>
 </section>
