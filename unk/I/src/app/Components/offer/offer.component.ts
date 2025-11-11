@@ -1,23 +1,34 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
-interface Offer {
-  title: string;
-  image: string;
-}
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-offer',
-    standalone: true,
-  imports: [CommonModule],
   templateUrl: './offer.component.html',
+  imports :[CommonModule],
+  standalone: true,
   styleUrls: ['./offer.component.css']
 })
 export class OfferComponent {
-  offers: Offer[] = [
-    { title: 'Complete Project Management', image: '/assets/offer-1.jpg' },
-    { title: 'High-Quality Materials', image: '/assets/offer-2.jpg' },
-    { title: 'On-Time Delivery', image: '/assets/offer-3.jpg' },
-    { title: 'Interiors Items', image: '/assets/offer-4.jpg' }
+  offers = [
+    {
+      title: 'Residential Design',
+      image: 'assets/i3.jpeg',
+      description: 'Create homes that tell your unique story'
+    },
+    {
+      title: 'Commercial Spaces',
+      image: 'assets/i7.jpeg', 
+      description: 'Design environments that inspire productivity'
+    },
+    {
+      title: 'Space Renovation',
+      image: 'assets/i5.jpeg',
+      description: 'Transform existing spaces with creative solutions'
+    },
+    {
+      title: 'Design Consultation',
+      image: 'assets/i6.jpeg',
+      description: 'Expert guidance for your design journey'
+    }
   ];
 }
