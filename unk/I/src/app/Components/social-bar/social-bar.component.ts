@@ -9,5 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./social-bar.component.css']
 })
 export class SocialBarComponent {
-  socials = ['Google', 'Facebook', 'Instagram', 'Threads'];
+  isVisible = true;
+
+  closeBar() {
+    this.isVisible = false;
+  }
 }
