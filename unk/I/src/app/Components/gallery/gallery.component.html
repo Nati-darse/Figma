@@ -1,11 +1,63 @@
-<section class="py-12">
-  <div class="max-w-7xl mx-auto px-6">
-    <h3 class="text-2xl font-semibold mb-6">We Provide Best Interiors According To Your Needs</h3>
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-serif font-light text-black mb-6">
+        We Provide Best Interiors According To Your Needs
+      </h2>
+      <p class="text-xl text-gray-900/80 max-w-3xl mx-auto leading-relaxed">
+        Explore our portfolio of beautifully crafted spaces that blend functionality with aesthetic excellence
+      </p>
+    </div>
 
-    <div class="grid gap-6 grid-cols-2 md:grid-cols-4">
-      <div *ngFor="let img of images" class="rounded-lg overflow-hidden shadow-sm">
-        <img [src]="img.src" [alt]="img.alt" class="w-full h-40 object-cover">
+    <!-- Masonry Gallery Grid -->
+    <div class="columns-2 md:columns-3 lg:columns-4 gap-4 md:gap-6 space-y-4 md:space-y-6">
+      <div *ngFor="let img of images; let i = index" 
+           class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer break-inside-avoid mb-4 md:mb-6">
+        
+        <!-- Image with dynamic heights for masonry effect -->
+        <img [src]="img.src" [alt]="img.alt" 
+             class="w-full object-cover transition-transform duration-700 group-hover:scale-110"
+             [class.h-48]="i % 6 === 0"    
+             [class.h-80]="i % 6 === 1"    
+             [class.h-72]="i % 6 === 2"    
+             [class.h-48]="i % 6 === 3"
+             [class.h-52]="i % 6 === 4"    
+             [class.h-80]="i % 6 === 5">  
+        
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-amber-900/70 via-amber-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        
+        <!-- Hover Content -->
+        <div class="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <div class="text-white">
+            <h4 class="font-semibold text-lg mb-1 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              Interior Design {{ i + 1 }}
+            </h4>
+            <p class="text-amber-100 text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+              View Project
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick View Button -->
+        <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+          <button class="bg-white/90 backdrop-blur-sm text-gray-700 p-2 rounded-full shadow-lg hover:bg-white transition duration-300">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+            </svg>
+          </button>
+        </div>
       </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="text-center mt-16">
+      <button class="bg-gray-900 text-white px-10 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+        View Complete Portfolio
+      </button>
+      <p class="text-gray-700 mt-4 text-sm">Get inspired by our diverse range of projects</p>
     </div>
   </div>
 </section>
