@@ -1,1 +1,28 @@
-:host { display:block; }
+:host {
+  display: block;
+}
+
+/* Smooth accordion animation */
+.accordion-content {
+  transition: max-height 0.5s ease-in-out;
+}
+
+/* Custom scrollbar for long answers */
+.answer-content {
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 #f3f4f6;
+}
+
+.answer-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.answer-content::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 10px;
+}
+
+.answer-content::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 10px;
+}
